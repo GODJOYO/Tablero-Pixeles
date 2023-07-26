@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.board {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+#pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 20px); /* Ajusta el número de columnas */
+    grid-gap: 1px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    /* Nuevos estilos para crear una cuadrícula */
+    border: 1px solid #000;
+}
+
+#pixel-grid > div {
+    width: 20px;
+    height: 20px;
+}
+
+#color-palette {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#cooldown-timer {
+    margin-top: 10px;
+    font-size: 18px;
+}
